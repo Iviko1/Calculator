@@ -49,18 +49,30 @@ calculate.addEventListener('click', e=>{
             case '+':
                 result = parseInt(first) + parseInt(second)
                 answer.innerHTML = result
+                first = result
+                second = '';
+                operator_selected = false;
                 break
             case '-':
                 result = parseInt(first) - parseInt(second)
                 answer.innerHTML = result
+                first = result
+                second = '';
+                operator_selected = false;
                 break
             case '/':
                 result = parseInt(first) / parseInt(second)
                 answer.innerHTML = result.toFixed(2)
+                first = result
+                second = '';
+                operator_selected = false;
                 break
             case '*':
                 result = parseInt(first) * parseInt(second)
                 answer.innerHTML = result
+                first = result
+                second = '';
+                operator_selected = false;
                 break
         }
     }
